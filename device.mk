@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
 # Other App
 PRODUCT_COPY_FILES += \
         device/zte/blade/prebuilt/APNPortugalPro.apk:system/app/APNPortugalPro.apk \
-	device/zte/blade/prebuilt/OIFileManager.apk:system/app/OIFileManager \
+	device/zte/blade/prebuilt/OIFileManager.apk:system/app/OIFileManager.apk
 
 # for bugmailer
 ifneq ($(TARGET_BUILD_VARIANT),user)
