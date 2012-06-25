@@ -70,11 +70,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
         dexpreopt
 
-# Other App
-PRODUCT_COPY_FILES += \
-        device/zte/blade/prebuilt/APNPortugalPro.apk:system/app/APNPortugalPro.apk \
-	device/zte/blade/prebuilt/OIFileManager.apk:system/app/OIFileManager.apk
-
 # for bugmailer
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += send_bug
@@ -132,3 +127,8 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product-if-exists, vendor/zte/blade/blade-vendor.mk)
+
+#Useful Apps
+PRODUCT_COPY_FILES += \
+	device/zte/blade/prebuilt/app/APNPortugalPro.apk:/system/app/APNPortugalPro.apk \
+	device/zte/blade/prebuilt/app/OIFileManager.apk:/system/app/OIFileManager.apk \
