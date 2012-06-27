@@ -132,3 +132,5 @@ $(call inherit-product-if-exists, vendor/zte/blade/blade-vendor.mk)
 PRODUCT_COPY_FILES += \
 	device/zte/blade/prebuilt/app/APNPortugalPro.apk:/system/app/APNPortugalPro.apk \
 	device/zte/blade/prebuilt/app/OIFileManager.apk:/system/app/OIFileManager.apk \
+	device/zte/blade/prebuilt/app/WiFiTether.apk:/system/app/WiFiTether.apk \
+
