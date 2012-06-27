@@ -71,6 +71,9 @@ ENABLE_JSC_JIT := true
 JS_ENGINE := v8
 HTTP := chrome
 
+# Webkit	
+ENABLE_WEBGL := true
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_LIBS := true
@@ -100,4 +103,4 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 0x0d200000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x13ba0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/zte/blade/releasetools/ota_from_target_files
+#TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/zte/blade/releasetools/ota_from_target_files
